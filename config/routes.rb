@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   resources :articles
-  get 'sginup',to: 'users#new'
+  get 'signup',to: 'users#new'
   resources :users, expect: [:new]
   get 'login' , to: 'sessions#new'
   post 'login', to: 'sessions#create'
